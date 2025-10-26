@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interview Results - MockPro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="navbar">
+        <div class="logo">MockPro</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="selection.html">Try Another</a>
+        </nav>
+    </header>
+
+    <main style="padding: 40px 20px;">
+        <div class="results-header">
+            <h1 style="font-size: 3em;">Interview Performance Report</h1>
+            <p style="font-size: 1.2em; color: #00d4ff;">Focus: Frontend Development | Difficulty: Medium | **Overall Score: 78%**</p>
+        </div>
+
+        <div class="feedback-grid">
+            <div class="chart-section glass-container">
+                <h2>Skill Breakdown</h2>
+                <div style="height: 300px; text-align: center;">
+                    <svg id="radarChart" width="300" height="300" style="margin: 0 auto; display: block;">
+                        <text x="150" y="150" fill="#ddd" text-anchor="middle">Radar Chart SVG Placeholder</text>
+                    </svg>
+                </div>
+                
+                <h3 style="margin-top: 30px;">Key Metrics</h3>
+                <div class="metric-row">
+                    <label>Accuracy (Technical)</label>
+                    <div class="score-bar"><div class="score-fill" style="width: 85%;"></div></div>
+                    
+                    <label>Communication (Pitch/Clarity)</label>
+                    <div class="score-bar"><div class="score-fill" style="width: 70%;"></div></div>
+                    
+                    <label>Body Language (Posture/Eyes)</label>
+                    <div class="score-bar"><div class="score-fill" style="width: 65%;"></div></div>
+                    
+                    <label>Pacing (Time per Question)</label>
+                    <div class="score-bar"><div class="score-fill" style="width: 90%;"></div></div>
+                </div>
+            </div>
+
+            <div class="summary-cards glass-container">
+                <h2>Question Summary</h2>
+                
+                <div class="feedback-card">
+                    <strong style="color: #00d4ff;">Q1: Tell me about a challenging project...</strong>
+                    <p style="font-size: 0.9em; margin: 5px 0 0;">Score: 9/10. Feedback: Excellent STAR structure, clear outcome.</p>
+                </div>
+
+                <div class="feedback-card">
+                    <strong style="color: #00d4ff;">Q2: Explain event delegation in JavaScript.</strong>
+                    <p style="font-size: 0.9em; margin: 5px 0 0;">Score: 6/10. Feedback: Correct concept, but pitch became too low. Be more assertive.</p>
+                </div>
+                
+                <div class="feedback-card">
+                    <strong style="color: #00d4ff;">Q3: Why do you want to work here?</strong>
+                    <p style="font-size: 0.9em; margin: 5px 0 0;">Score: 7/10. Feedback: Good answer, but you looked away from the camera frequently.</p>
+                </div>
+
+                <p style="text-align: center; margin-top: 20px; color: #c9e6ff;">*Detailed feedback is available in the downloadable PDF.</p>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="cta-button" onclick="alert('Simulating Replay...')">Replay Interview</button>
+            <button class="cta-button" onclick="window.location.href='selection.html'" style="background-color: #80ff00; color: #1e3c72; box-shadow: 0 4px 15px rgba(128, 255, 0, 0.6);">Try Another Interview</button>
+            <button class="cta-button" onclick="alert('Simulating PDF Download...')">Download PDF Report</button>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2025 MockPro Platform. All rights reserved.</p>
+    </footer>
+
+    <script src="results.js"></script>
+</body>
+</html>

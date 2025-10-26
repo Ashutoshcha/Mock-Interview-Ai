@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Setup Interview - MockPro</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="navbar">
+        <div class="logo">MockPro</div>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="selection.html">Selection</a>
+            <a href="#">Sign In</a>
+        </nav>
+    </header>
+
+    <div class="setup-container glass-container">
+        <h1>Interview Setup</h1>
+        <h2 id="interviewFocus">Focus: General - Behavioral</h2>
+        
+        <div class="settings-group">
+            <h3>Interview Difficulty</h3>
+            <div class="difficulty-options">
+                <input type="radio" id="diffEasy" name="difficulty" value="Easy" checked>
+                <label for="diffEasy">Easy</label>
+
+                <input type="radio" id="diffMedium" name="difficulty" value="Medium">
+                <label for="diffMedium">Medium</label>
+
+                <input type="radio" id="diffHard" name="difficulty" value="Hard">
+                <label for="diffHard">Hard</label>
+            </div>
+        </div>
+
+        <div class="settings-group">
+            <h3>Advanced Analysis</h3>
+            <div class="toggle-row">
+                <label for="bodyLanguageToggle">Enable Body Language & Eye Contact Analysis</label>
+                <label class="toggle-switch">
+                    <input type="checkbox" id="bodyLanguageToggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+            <p style="font-size: 0.9em; color: #c9e6ff; margin-top: 15px;">(Requires camera access to be active)</p>
+        </div>
+
+        <div class="settings-group">
+            <h3>Device Check (For Simulation)</h3>
+            <div class="device-status">
+                <div class="status-item">
+                    <span class="status-indicator granted"></span>
+                    Microphone Access: <span id="micStatus">Granted</span>
+                </div>
+                <div class="status-item">
+                    <span class="status-indicator granted"></span>
+                    Camera Access: <span id="camStatus">Granted</span>
+                </div>
+            </div>
+            <p style="font-size: 0.8em; color: #c9e6ff; margin-top: 15px;">*Note: Status is hardcoded as "Granted" for this mock setup.</p>
+        </div>
+
+        <button id="startInterviewButton" class="cta-button" style="width: 100%; margin-top: 20px;">Start Interview</button>
+    </div>
+
+    <footer class="footer">
+        <p>&copy; 2025 MockPro Platform. All rights reserved.</p>
+        <div class="footer-links">
+            <a href="#">Privacy Policy</a>
+            <span>|</span>
+            <a href="#">Terms of Service</a>
+        </div>
+    </footer>
+
+    <script src="setup.js"></script>
+</body>
+</html>
